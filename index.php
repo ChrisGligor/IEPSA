@@ -8,7 +8,7 @@ $handle = fopen ("php://stdin","r");
 out("Welcome in your taskManager:");
 
 $week = new Week();
-$defaultTask = new Task('faire le ménage');
+$defaultTask = new Task('faire le mï¿½nage');
 
 addTaskToDayOfWeek($week,'sunday', $defaultTask);
 
@@ -23,7 +23,7 @@ do{
 	$task->setName(in('Plz enter tha task name', $handle));
 	$week[$day][] = $task;
 	print_r($week);
-	out("----------");
+	out("________________");
 	
 } while(!empty($day) && !empty($task->getName()));
 
